@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&display=swap');
+
+
+.hero-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--text-light);
+  max-width: 800px;
+  padding: 0 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-family: 'Poppins', 'Noto Sans Sinhala', sans-serif;
+
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+  font-family: 'Poppins', 'Noto Sans Sinhala', sans-serif;
+
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: var(--primary-green);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-primary:hover {
+  background: #1B5E20;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: var(--primary-green);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}

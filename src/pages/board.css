@@ -1,0 +1,165 @@
+/* ===== Container & Layout ===== */
+.board-container {
+  padding: 80px 5%;
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.board-title {
+  font-size: 2.5rem;
+  color: var(--primary-green, #2e7d32);
+  margin-bottom: 50px;
+}
+
+.board-tier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+}
+
+.tier-divider {
+  max-width: 1200px;
+  margin: 60px auto 40px auto;
+  position: relative;
+  text-align: center;
+}
+
+.tier-divider::before,
+.tier-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 2px;
+  background-color: #e0e0e0;
+}
+
+.tier-divider::before { left: 0; }
+.tier-divider::after { right: 0; }
+
+.tier-divider h3 {
+  display: inline-block;
+  padding: 0 20px;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #fcfcfc;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Card Styling ===== */
+.card {
+  width: 280px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Make the President card slightly larger to emphasize rank */
+.tier-1 .card {
+  width: 320px;
+  transform: scale(1.05);
+}
+.tier-1 .card:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.featured-card {
+  background: linear-gradient(135deg, var(--primary-green, #2e7d32), #4caf50);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(46, 125, 50, 0.3);
+  color: white;
+}
+
+.featured-card .card-description h3,
+.featured-card .card-description p {
+  color: white;
+}
+
+/* Hover Effect: Lift and Shadow */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(46, 125, 50, 0.3);
+}
+
+/* ===== Image Handling ===== */
+.card-image-placeholder {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.featured-card .card-image {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Text & Typography ===== */
+.card-description h3 {
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin: 15px 0 5px 0;
+  font-weight: 700;
+}
+
+.card-description p {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .board-tier {
+    gap: 20px;
+  }
+  .card {
+    width: calc(50% - 20px); /* 2 per row */
+  }
+  .tier-1 .card {
+    width: calc(50% - 20px);
+    transform: scale(1);
+  }
+  .tier-1 .card:hover {
+    transform: translateY(-10px);
+  }
+  .tier-divider::before,
+  .tier-divider::after {
+    width: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-container {
+    padding: 60px 20px;
+  }
+  .card, .tier-1 .card {
+    width: 100%;
+    max-width: 320px;
+  }
+  .tier-divider::before,
+  .tier-divider::after {
+    display: none;
+  }
+}

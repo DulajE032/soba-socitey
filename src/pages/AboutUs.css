@@ -1,0 +1,111 @@
+.about-page-container {
+  padding: 120px 5% 80px 5%;
+  background: var(--light-blue);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-page-title {
+  color: var(--primary-green);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-page-subtitle {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.about-paragraphs {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.about-paragraphs p {
+  margin-bottom: 15px;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.board-member-card {
+  background: var(--surface-white);
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.board-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+}
+
+.member-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  background: #f1f8e9;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #558b2f;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 4px solid var(--light-green);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.board-member-card:hover .member-photo-placeholder {
+  border-color: var(--primary-green);
+  transform: scale(1.05);
+}
+
+.member-name {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.member-role {
+  color: var(--primary-green);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.member-details {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-page-container {
+    padding: 100px 5% 50px 5%;
+  }
+  .about-page-title {
+    font-size: 2.5rem;
+  }
+}

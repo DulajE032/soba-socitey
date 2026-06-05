@@ -1,0 +1,215 @@
+/* ===== Container ===== */
+.feedback-container {
+  padding: 80px 10%;
+  background: var(--light-blue);
+}
+
+.feedback-grid {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Content & Form ===== */
+.feedback-content {
+  flex: 1;
+}
+
+.feedback-title {
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.feedback-subtitle {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clean-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.clean-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.2);
+}
+
+/* ===== Video Section ===== */
+.feedback-video-container {
+  flex: 1;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.video-title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #222;
+}
+
+.feedback-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.video-caption {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 900px) {
+  .feedback-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .feedback-content,
+  .feedback-video-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-container {
+    padding: 60px 5%;
+  }
+
+  .feedback-title {
+    font-size: 2rem;
+  }
+
+  .feedback-video-container {
+    padding: 20px;
+  }
+}
+
+/* ===== Feedback Cards Section ===== */
+.feedback-cards-section {
+  margin-top: 80px;
+}
+
+.feedback-cards-title {
+  text-align: center;
+  color: var(--primary-green, #2e7d32);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feedback-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Glassmorphic Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gradient accent for the glass card */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-green, #2e7d32), #a5d6a7);
+  opacity: 0.8;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.glass-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-green, #2e7d32);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-dark, #333);
+}
+
+.user-role {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.glass-card-message {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+}

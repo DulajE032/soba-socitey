@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Sinhala:wght@400;700&display=swap');
+
+:root {
+  --primary-green: #2E7D32;
+  --light-green: #A5D6A7;
+  --earth-brown: #8D6E63;
+  --light-blue: #E1F5FE;
+  --surface-white: #FFFFFF;
+  --text-dark: #2C3E50;
+  --text-light: #F8F9FA;
+
+
+}
+
+body {
+  font-family: 'Poppins', 'Noto Sans Sinhala', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--surface-white);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.maname-regular {
+  font-family: "Maname", serif;
+  font-weight: 400;
+  font-style: normal;
+}
