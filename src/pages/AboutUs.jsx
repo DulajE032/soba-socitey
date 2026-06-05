@@ -25,7 +25,7 @@ const AboutUs = () => {
           <div className="section fade-in-up" style={{ animationDelay: "0.2s" }}>
             <h2>🌿 Our Background</h2>
             <p>
-              Since our foundation at the University of Peradeniya, the Soba Society has
+              Since our foundation at the <a href="https://www.pdn.ac.lk" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', fontWeight: 'bold'}}>University of Peradeniya</a>, the Soba Society has
               worked to bridge the gap between human activities and environmental preservation.
             </p>
           </div>

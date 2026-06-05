@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <a href="/">Home</a>
-
+          <a href="https://www.pdn.ac.lk" target="_blank" rel="noopener noreferrer">University of Peradeniya</a>
         </div>
 
         {/* Tech Support */}
