@@ -70,6 +70,7 @@ const Feedback = () => {
             <video
               className="feedback-video"
               controls
+              autoPlay
               playsInline
               preload="metadata"
             >
