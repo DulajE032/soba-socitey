@@ -46,14 +46,7 @@ const Events = () => {
                   <p style={{margin:0, whiteSpace:'pre-line'}}>{event.location}</p>
                 </div>
                 <p className="event-desc">{event.desc}</p>
-                <a 
-                  href="https://forms.gle/MsF6qS35KYPhTSKp6" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="find-out-more"
-                >
-                  Register Now
-                </a>
+                <p>closed Now</p>
               </div>
               <div className="event-image-box">
                 <img className="project-image" src={event.img} alt={event.title} />
