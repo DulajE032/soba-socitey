@@ -1,12 +1,12 @@
 import './projects.css';
-import im1 from '../../../assets/heroimages/im1.png';
+import im1 from '../../../assets/heroimages/hero.jpeg';
 import im2 from '../../../assets/heroimages/im2.png';
-import im3 from '../../../assets/heroimages/im3.png';
-import im4 from '../../../assets/heroimages/im4.png';
+import im3 from '../../../assets/heroimages/im5.jpeg';
+import im4 from '../../../assets/heroimages/im4.jpeg';
 
 const Projects = () => {
   const projectsList = [
-    { title: 'River Cleanup', img: im1 },
+    { title: 'planting', img: im1 },
     { title: 'Reforestation Drive', img: im2 },
     { title: 'Renewable Energy', img: im3 },
     { title: 'Community Gardening', img: im4 },

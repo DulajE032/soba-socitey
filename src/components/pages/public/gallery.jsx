@@ -1,26 +1,36 @@
 import './gallery.css';
-import im1 from '../../../assets/heroimages/im1.png';
-import im2 from '../../../assets/heroimages/im2.png';
-import im3 from '../../../assets/heroimages/im3.png';
-import im4 from '../../../assets/heroimages/im4.png';
-import wa1 from '../../../assets/heroimages/WhatsApp Image 2026-04-18 at 14.47.55 (2).jpeg';
-import wa2 from '../../../assets/heroimages/WhatsApp Image 2026-04-18 at 14.47.56.jpeg';
 import { useState, useEffect } from 'react';
+
+// Import images from assets
+import hero from '../../../assets/heroimages/hero.jpeg';
+import im0 from '../../../assets/heroimages/im0.jpeg';
+import im2 from '../../../assets/heroimages/im2.png';
+import im4 from '../../../assets/heroimages/im4.jpeg';
+import im5 from '../../../assets/heroimages/im5.jpeg';
+import im6 from '../../../assets/heroimages/im6.jpeg';
+import im7 from '../../../assets/heroimages/im7.jpeg';
+import im8 from '../../../assets/heroimages/im8.jpeg';
+import im9 from '../../../assets/heroimages/im9.jpeg';
+import im10 from '../../../assets/heroimages/im10.jpeg';
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4; // Show 4 images per page for a good grid look
+  const itemsPerPage = 8; // Show 8 images per page for a better grid
 
   useEffect(() => {
     const data = [
-      { itemImageSrc: im1, alt: 'River Cleanup' },
-      { itemImageSrc: wa1, alt: 'Forest Drive' },
-      { itemImageSrc: im2, alt: 'Community Meetup' },
-      { itemImageSrc: wa2, alt: 'Nature Session' },
-      { itemImageSrc: im3, alt: 'Green Project' },
-      { itemImageSrc: im4, alt: 'Wildlife Observation' }
+      { itemImageSrc: hero, alt: 'Natural Landscape' },
+      { itemImageSrc: im0, alt: 'Forest Conservation' },
+      { itemImageSrc: im2, alt: 'Community Engagement' },
+      { itemImageSrc: im4, alt: 'Wildlife Observation' },
+      { itemImageSrc: im5, alt: 'Environmental Project' },
+      { itemImageSrc: im6, alt: 'Eco Awareness' },
+      { itemImageSrc: im7, alt: 'Nature Protection' },
+      { itemImageSrc: im8, alt: 'Biodiversity Research' },
+      { itemImageSrc: im9, alt: 'Sustainable Future' },
+      { itemImageSrc: im10, alt: 'Green Initiative' }
     ];
     setImages(data);
   }, []);

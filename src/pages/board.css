@@ -97,13 +97,16 @@
 .card-image-placeholder {
   position: relative;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 50%;
   border: 4px solid white;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   background: #f0f0f0;
@@ -123,10 +126,59 @@
 }
 
 .card-description p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #666;
   font-weight: 500;
-  margin: 0;
+  margin: 2px 0;
+}
+
+.card-description .role {
+  font-weight: 600;
+  color: var(--primary-green, #2e7d32);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card-description .faculty {
+  font-style: italic;
+  color: #555;
+}
+
+.card-description .batch {
+  font-size: 0.85rem;
+  color: #888;
+  background: #f0f0f0;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.card-description .phone {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+  margin-top: 5px;
+  display: block;
+}
+
+.card-description .phone::before {
+  content: "📞 ";
+  font-size: 0.8rem;
+}
+
+.featured-card .card-description .role {
+  color: #e8f5e9;
+}
+
+.featured-card .card-description .phone {
+  color: #e8f5e9;
+}
+
+.featured-card .card-description .batch {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 /* ===== Responsive Design ===== */

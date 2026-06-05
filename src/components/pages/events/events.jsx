@@ -1,6 +1,6 @@
 import './events.css';
 import { MapPin } from 'lucide-react';
-import im1 from '../../../assets/heroimages/im1.png';
+import im1 from '../../../assets/heroimages/hero.jpeg';
 
 const Events = () => {
 
@@ -46,7 +46,14 @@ const Events = () => {
                   <p style={{margin:0, whiteSpace:'pre-line'}}>{event.location}</p>
                 </div>
                 <p className="event-desc">{event.desc}</p>
-                <a href="#" className="find-out-more">Find out more</a>
+                <a 
+                  href="https://forms.gle/MsF6qS35KYPhTSKp6" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="find-out-more"
+                >
+                  Register Now
+                </a>
               </div>
               <div className="event-image-box">
                 <img className="project-image" src={event.img} alt={event.title} />

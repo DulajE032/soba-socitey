@@ -4,20 +4,20 @@ import clip1 from '../../../assets/videoclips/clip1.mp4';
 const dummyFeedbacks = [
   {
     id: 1,
-    name: "Sarah Jenkins",
+    name: "mohomed rasheed",
     role: "Volunteer",
-    message: "The recent river cleanup was incredibly well-organized. It felt great to make a tangible difference in our community!"
+    message: "The soba projectwas incredibly well-organized. It felt great to make a tangible difference in our community!"
   },
   {
     id: 2,
-    name: "Mark T.",
-    role: "Nature Enthusiast",
+    name: "Maleesha deniyagama",
+    role: "faculty of agriculture ",
     message: "I learned so much during the wildlife observation event. The team is very knowledgeable and passionate."
   },
   {
     id: 3,
-    name: "Elena Rodriguez",
-    role: "Community Member",
+    name: "yuvidu bhankua",
+    role: "faculty of engineering",
     message: "A fantastic initiative! Planting those trees made me feel connected to nature again. Highly recommend joining."
   }
 ];

@@ -72,7 +72,16 @@ const Navbar = () => {
             <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
             <a href="/#projects" onClick={(e) => handleScrollLink(e, 'projects')}>Projects</a>
             <a href="/#gallery" onClick={(e) => handleScrollLink(e, 'gallery')}>Gallery</a>
-            <Link to="/form" className="btn-primary" style={{color:'white', textDecoration:'none', padding:'8px 20px'}} onClick={() => setIsMenuOpen(false)}>Join Us</Link>
+            <a 
+              href="https://forms.gle/MsF6qS35KYPhTSKp6" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary" 
+              style={{color:'white', textDecoration:'none', padding:'8px 20px'}}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Join Us
+            </a>
           </div>
         </div>
       </nav>

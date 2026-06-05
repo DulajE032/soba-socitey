@@ -1,13 +1,17 @@
 import './hero.css'
-import im1 from '../../assets/heroimages/im1.png';
+import im0 from '../../assets/heroimages/im0.jpeg';
 import im2 from '../../assets/heroimages/im2.png';
-import im3 from '../../assets/heroimages/im3.png';
-import im4 from '../../assets/heroimages/im4.png';
+import im3 from '../../assets/heroimages/im5.jpeg';
+import im4 from '../../assets/heroimages/im4.jpeg';
+import im5 from '../../assets/heroimages/im5.jpeg';
+import im6 from '../../assets/heroimages/im6.jpeg';
+import im7 from '../../assets/heroimages/im7.jpeg';
+import im8 from '../../assets/heroimages/im8.jpeg';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
-  const images = [im1, im2, im3, im4];
+  const images = [im0, im2, im3, im4,im5,im6,im7,im8];
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
@@ -29,7 +33,15 @@ const Hero = () => {
           wildlife conservation, and spreading sustainability awareness.
         </p>
         <div className="hero-buttons">
-          <button className="btn-primary" onClick={() => navigate('/form')}>Get Involved</button>
+          <a 
+            href="https://forms.gle/MsF6qS35KYPhTSKp6" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-primary"
+            style={{ textDecoration: 'none', display: 'inline-block' }}
+          >
+            Get Involved
+          </a>
           <button className="btn-secondary">Learn More</button>
         </div>
       </div>
