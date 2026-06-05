@@ -63,7 +63,9 @@ const UpcomingEvents = () => {
                 src={eventvideo}
                 autoPlay
                 loop
+                muted
                 playsInline
+                controls
               />
             </div>
           </div>
