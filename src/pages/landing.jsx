@@ -6,10 +6,10 @@ import Mission from "../components/pages/events/mission.jsx";
 import Projects from "../components/pages/events/projects.jsx";
 import Events from "../components/pages/events/events.jsx";
 import UpcomingEvents from "../components/pages/events/UpcomingEvents.jsx";
-import Gallery from "../components/pages/public/gallery.jsx";
 import Feedback from "../components/pages/public/feedback.jsx";
 import Footer from "../components/pages/public/footer.jsx";
 import SocialWidget from "../components/pages/public/SocialWidget.jsx";
+import TechCapsuleCarousel from "../components/pages/public/TechCapsuleCarousel.jsx";
 
 function LandingPage() {
   return (
@@ -22,7 +22,7 @@ function LandingPage() {
         <Events />
         <UpcomingEvents />
         <Projects />
-        <Gallery />
+        <TechCapsuleCarousel />
         <Feedback />
         <SocialWidget />
       </main>

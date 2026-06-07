@@ -71,6 +71,7 @@ const Feedback = () => {
               className="feedback-video"
               controls
               autoPlay
+              muted
               playsInline
               preload="metadata"
             >
