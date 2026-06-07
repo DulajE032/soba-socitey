@@ -17,7 +17,11 @@
   position: relative;
   font-family: 'Poppins', sans-serif;
 }
+.nav-controls-mobile{
+display: flex;
+position: inherit;
 
+}
 .title::after {
   content: '';
   position: absolute;
@@ -200,58 +204,43 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .carousel-wrapper {
-    flex-direction: row; /* Keep buttons on the side */
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
+    gap: 12px;
   }
 
   .tech-capsule-track {
-    min-height: 420px;
-    perspective: none;
-    width: auto;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-btn {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-  }
-
-  .nav-btn svg {
-    width: 20px;
-    height: 20px;
+    width: 250px;
   }
 
   .tech-card {
-    width: 280px; /* Slightly smaller to fit buttons on very small screens */
-    height: 380px;
-    position: relative; /* Remove absolute positioning to fit in flex flow better on mobile */
+    width: 250px;
+    height: 360px;
   }
-  
-  .tech-card.left, .tech-card.right, .tech-card.left-2, .tech-card.right-2 {
-    display: none;
+
+  .tech-card-content {
+    padding: 1rem;
   }
-  
-  .tech-card.active {
-    transform: none;
-    opacity: 1;
+
+  .tech-card-title {
+    font-size: 0.95rem;
+  }
+
+  .tech-card-desc {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-btn-add {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 36px;
   }
 }
 
-@media (max-width: 480px) {
-  .tech-card {
-    width: 240px;
-    height: 340px;
-  }
-  
-  .nav-btn {
-    width: 35px;
-    height: 35px;
-  }
-}
+
+
