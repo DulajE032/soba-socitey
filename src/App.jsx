@@ -13,6 +13,7 @@ import "primeicons/primeicons.css";
 
 import './App.css'
 import LoginForm from "./admin/LoginForm.jsx";
+import TechCapsuleCarousel from "./components/pages/public/TechCapsuleCarousel.jsx";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutUs />} />
-          <Route path="/admin" element={<LoginForm />} />
+        <Route path="/admin" element={<LoginForm />} />
+        <Route path="/galaery" element={<TechCapsuleCarousel/>}/>
       </Routes>
    </>
   )

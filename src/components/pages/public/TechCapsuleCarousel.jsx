@@ -54,7 +54,7 @@ const TechCapsuleCarousel = () => {
   };
 
   return (
-    <div className="tech-capsule-container">
+    <div id ='gallery' className="tech-capsule-container">
       <div className='title'>Our Gallery</div>
       
       <div className="carousel-wrapper">
